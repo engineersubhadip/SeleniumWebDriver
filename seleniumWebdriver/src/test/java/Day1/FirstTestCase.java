@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 
 /*
  1) Launch browser (chrome)
-2) Open URL  https://www.flipkart.com/
-3) Validate title should be   "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+2) Open URL  https://demo.opencart.com/
+3) Validate title should be "Your Store"
 "
 4) close page
  */
@@ -25,12 +25,14 @@ public class FirstTestCase {
 		
 //		2. Open URL :-
 		
-		driver.get("https://www.flipkart.com/");
+		driver.get("https://demo.opencart.com/");
+
 		
 //		3. Capture title of WebPage :-
 		
 		String webPageTitle = driver.getTitle();
-		if (webPageTitle.equals("nopCommerce demo store") == true) {
+		
+		if (webPageTitle.equals("Your Store") == true) {
 			System.out.println("Test Passed");
 		} else  {
 			System.out.println("Test Failed");
@@ -38,7 +40,7 @@ public class FirstTestCase {
 		
 //		4. Closing the browser :-
 		
-		driver.close();
+		driver.quit();
 	}
 
 }
