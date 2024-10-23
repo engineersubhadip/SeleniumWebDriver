@@ -50,7 +50,11 @@ public class LocatorsDemo {
 		
 		List<WebElement> headerLinks = driver.findElements(By.className("list-inline-item"));
 		
-		System.out.println(headerLinks.size());
+		System.out.println("Number of Header Links : "+headerLinks.size());
+		
+		List<WebElement> totalTags = driver.findElements(By.tagName("a"));
+		
+		System.out.println("Total Number of Links "+totalTags.size());
 		
 	}
 
