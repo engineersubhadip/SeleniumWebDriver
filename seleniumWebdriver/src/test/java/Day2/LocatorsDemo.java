@@ -59,6 +59,13 @@ public class LocatorsDemo {
 		List<WebElement> totalImages = driver.findElements(By.tagName("img"));
 		
 		System.out.println("Total Number of Images "+totalImages.size());
+		
+		List<WebElement> arr1 = driver.findElements(By.tagName("qrt"));
+		
+		System.out.println(arr1); // empty list
+		
+		WebElement result = driver.findElement(By.name("qrt")); // No such element exception
+		
 	}
 
 }
