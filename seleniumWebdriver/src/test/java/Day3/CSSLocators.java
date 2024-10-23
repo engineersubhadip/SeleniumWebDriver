@@ -26,7 +26,7 @@ public class CSSLocators {
 		
 		driver.findElement(By.cssSelector("input.form-control[name='search']")).sendKeys("Toffee");
 		
-		
+		driver.findElement(By.cssSelector(".btn.btn-lg.btn-inverse.btn-block.dropdown-toggle")).click(); // via Selector Hub
 	}
 
 }
