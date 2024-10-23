@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CSSLocators {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -15,8 +14,13 @@ public class CSSLocators {
 		
 		driver.manage().window().maximize(); // maximize the browser window
 		
-		driver.findElement(By.cssSelector("input.form-control-lg")).sendKeys("Laptop"); // entering "Laptop" in the search box
+//		tag.className
 		
+//		driver.findElement(By.cssSelector("input.form-control-lg")).sendKeys("Laptop"); // entering "Laptop" in the search box
+		
+//		tag[attribute="value"]
+		
+		driver.findElement(By.cssSelector("input[name='search']")).sendKeys("Bags");
 		
 		
 	}
