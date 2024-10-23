@@ -13,14 +13,20 @@ public class LocatorsDemo {
 		
 		driver.get("https://demo.opencart.com/");
 		
-		WebElement searchBox = driver.findElement(By.name("search"));
+//		NAME Attribute :-
 		
-		searchBox.sendKeys("MacBook");
+//		WebElement searchBox = driver.findElement(By.name("search"));
+//		
+//		searchBox.sendKeys("MacBook");
 		
-//		System.out.println(searchBox);
+		driver.findElement(By.name("search")).sendKeys("MacBook"); // single line 
 		
-//		driver.quit();
-
+		
+//		ID Attribute :-
+		
+		boolean flag = driver.findElement(By.id("logo")).isDisplayed();
+		
+		System.out.println(flag);
 	}
 
 }
