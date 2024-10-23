@@ -52,10 +52,13 @@ public class LocatorsDemo {
 		
 		System.out.println("Number of Header Links : "+headerLinks.size());
 		
-		List<WebElement> totalTags = driver.findElements(By.tagName("a"));
+		List<WebElement> totalTags = driver.findElements(By.tagName("a")); // total links in the webpage
 		
 		System.out.println("Total Number of Links "+totalTags.size());
 		
+		List<WebElement> totalImages = driver.findElements(By.tagName("img"));
+		
+		System.out.println("Total Number of Images "+totalImages.size());
 	}
 
 }
