@@ -23,7 +23,11 @@ public class SolutionAssignment {
 		
 		System.out.println("Total Images : "+totalImages.size());
 		
-		driver.findElement(By.linkText("Monitors")).click();
+//		driver.findElement(By.linkText("Monitors")).click();
+		
+		List<WebElement> listHeader = driver.findElements(By.className("nav-item"));
+		
+		listHeader.get(2).click();
 
 	}
 
