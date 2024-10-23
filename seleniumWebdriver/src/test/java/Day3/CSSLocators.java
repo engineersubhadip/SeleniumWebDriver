@@ -18,9 +18,13 @@ public class CSSLocators {
 		
 //		driver.findElement(By.cssSelector("input.form-control-lg")).sendKeys("Laptop"); // entering "Laptop" in the search box
 		
-//		tag[attribute="value"]
+//		tag[attribute='value']
 		
-		driver.findElement(By.cssSelector("input[name='search']")).sendKeys("Bags");
+//		driver.findElement(By.cssSelector("input[name='search']")).sendKeys("Bags");
+		
+//		tag.className[attribute='value']
+		
+		driver.findElement(By.cssSelector("input.form-control[name='search']")).sendKeys("Toffee");
 		
 		
 	}
