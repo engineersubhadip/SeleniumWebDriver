@@ -1,15 +1,21 @@
 package Day2;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class LocatorsDemo {
 
 	public static void main(String[] args) {
 		
 		WebDriver driver = new ChromeDriver();
+		
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--disable-lazy-image-loading");
 		
 		driver.get("https://demo.opencart.com/");
 		
@@ -24,9 +30,28 @@ public class LocatorsDemo {
 		
 //		ID Attribute :-
 		
-		boolean flag = driver.findElement(By.id("logo")).isDisplayed();
+//		boolean flag = driver.findElement(By.id("logo")).isDisplayed();
+//		
+//		System.out.println(flag);
+//		
+//		driver.quit();
 		
-		System.out.println(flag);
+//		boolean flag = driver.findElement(By.id("logo")).isDisplayed(); // single line
+		
+//		System.out.println("Display Status : "+flag);
+		
+		
+//		Link Text/Partial Link Text :-
+		
+//		driver.findElement(By.linkText("Tablets")).click();
+		
+		
+//		className Attribute :-
+		
+		List<WebElement> headerLinks = driver.findElements(By.className("list-inline-item"));
+		
+		System.out.println(headerLinks.size());
+		
 	}
 
 }
