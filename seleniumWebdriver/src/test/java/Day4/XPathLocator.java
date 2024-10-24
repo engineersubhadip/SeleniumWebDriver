@@ -14,10 +14,16 @@ public class XPathLocator {
 		
 //		driver.findElement(By.xpath("/html[1]/body[1]/header[1]/div[1]/div[1]/div[2]/div[1]/input[1]")).sendKeys("Tshirt"); // absolute xPath
 		
+//		xpath with single attribute
+		
+		
 //		driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("Laptop"); // relative xpath
 		
-		driver.findElement(By.xpath("//img[@title=\"MacBook\"]")).click(); // using relative xpath to click the MacBook
+//		driver.findElement(By.xpath("//img[@title=\"MacBook\"]")).click(); // using relative xpath to click the MacBook
 		
+//		xpath with multiple attributes :-
+		
+		driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("Toffee");
 		
 	}
 
