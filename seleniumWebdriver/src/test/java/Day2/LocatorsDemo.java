@@ -65,7 +65,7 @@ public class LocatorsDemo {
 		System.out.println(arr1); // empty list
 		
 		WebElement result = driver.findElement(By.name("qrt")); // No such element exception
-		
+//		
 	}
 
 }
